@@ -10,7 +10,7 @@
 
 ### Code ###
 
-```
+```bash
 ~$ drush dl drupal
 ~$ mv drupal-7.xx public_html
 ~$ cd public_html
