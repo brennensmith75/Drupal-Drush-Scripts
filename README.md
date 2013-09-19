@@ -27,7 +27,7 @@ Example: `./clear_cache_all.php`
 * For editing files, I recommend [Notepad++](http://notepad-plus-plus.org).
 * You can stage, commit and push changes to [Github repo](https://github.com/orbingol/drush) using these tools.
 
-## Debian (for development) ##
+### Debian (for development) ###
 
 * Use `apt-get install git` to install *Git* from terminal.
 * Go to your development directory (or create one) and run `git checkout https://github.com/orbingol/drush.git`
