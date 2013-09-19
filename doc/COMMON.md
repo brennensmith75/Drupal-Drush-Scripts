@@ -1,5 +1,22 @@
 # Common Drush Commands ###
 
+## Super fast Drupal 7 install ##
+
+### Summary ###
+
+* Download Drupal using Drush *(Careful about version number)*
+* Move downloaded Drupal directory to *public_html*
+* Install Drupal using Drush
+
+### Code ###
+
+```
+~$ drush dl drupal
+~$ mv drupal-7.xx public_html
+~$ cd public_html
+~$ drush site-install --db-url=mysql://username:password@localhost/dbname
+```
+
 ## Create a Zen subtheme ##
 
 ### Requirements ###
