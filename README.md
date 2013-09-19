@@ -1,4 +1,4 @@
-# Drush-PHP CLI Scripts for Drupal Multi-Site Installations #
+## Drush-PHP CLI Scripts for Drupal Multi-Site Installations ##
 
 ## Introduction ##
 
