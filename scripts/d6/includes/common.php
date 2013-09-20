@@ -4,7 +4,8 @@
 require 'variables.php';
 
 // Reads Drupal "sites" directory
-function getSites() {
+function getSites()
+{
 
   global $variables;
 
@@ -12,13 +13,13 @@ function getSites() {
   $dir = $variables['dir'];
 
   // Read directory
-  if($handle = opendir($dir)){
+  if ($handle = opendir($dir)) {
     while (false !== ($entry = readdir($handle))) {
-        if(is_dir($dir . "/" . $entry) && !is_link($dir . "/" . $entry)) {
-            $entry = trim($entry);
-            $data[] = $entry;
-        }
-     }
+      if (is_dir($dir . "/" . $entry) && !is_link($dir . "/" . $entry)) {
+        $entry = trim($entry);
+        $data[] = $entry;
+      }
+    }
   }
 
   // Remove standard directories from the array

@@ -23,23 +23,23 @@ $command_favicon = 'drush ev \'$a=variable_get("theme_mytheme_settings", array()
 $command_slogan = 'drush ev \'$a=variable_get("theme_mytheme_settings", array());$a["toggle_slogan"]=1;variable_set("theme_mytheme_settings", $a);\'';
 
 // Start looping within the sites
-foreach($data as $d) {
+foreach ($data as $d) {
 
   // Change to the site directory in consideration
   chdir($variables['dir'] . "/" . $d);
 
-    // Print some information
-    echo 'Site #: ' . $counter . ' / ' . $site_count . "\n" . 'Processing: ' . $d . "\n";
+  // Print some information
+  echo 'Site #: ' . $counter . ' / ' . $site_count . "\n" . 'Processing: ' . $d . "\n";
 
-    // Execute commands
-    system($command_favicon);
-    system($command_slogan);
+  // Execute commands
+  system($command_favicon);
+  system($command_slogan);
 
-    // Clear all caches
-    system('drush cc all');
+  // Clear all caches
+  system('drush cc all');
 
-    // Increase counter
-    $counter++;
+  // Increase counter
+  $counter++;
 
 }
 

@@ -15,27 +15,27 @@ require_once '../includes/common.php';
 $data = getSites();
 
 // Start looping within the sites
-foreach($data as $d) {
+foreach ($data as $d) {
 
   // Change to the site directory in consideration
   chdir($variables['dir'] . "/" . $d);
 
-    // Print current working directory
-    echo getcwd() . "\n";
+  // Print current working directory
+  echo getcwd() . "\n";
 
-    // Prepare settings.php file for writing
-    system('chmod u+w settings.php');
-    system('chmod u+w ' . $variables['dir'] . '/' . $d);
+  // Prepare settings.php file for writing
+  system('chmod u+w settings.php');
+  system('chmod u+w ' . $variables['dir'] . '/' . $d);
 
-    // We are adding "meta_description" field to settings.php. This field is accessible from Theme Settings
-    system('sed "s/\'welcome_text\',/\'welcome_text\',\r\n\'meta_description\',/g" settings.php > settings_tmp.php');
+  // We are adding "meta_description" field to settings.php. This field is accessible from Theme Settings
+  system('sed "s/\'welcome_text\',/\'welcome_text\',\r\n\'meta_description\',/g" settings.php > settings_tmp.php');
 
-    // Set new settings.php
-    system('mv settings_tmp.php settings.php');
+  // Set new settings.php
+  system('mv settings_tmp.php settings.php');
 
-    // Return settings.php to its default permissions
-    system('chmod u-w settings.php');
-    system('chmod u-w ' . $variables['dir'] . '/' . $d);
+  // Return settings.php to its default permissions
+  system('chmod u-w settings.php');
+  system('chmod u-w ' . $variables['dir'] . '/' . $d);
 
 }
 

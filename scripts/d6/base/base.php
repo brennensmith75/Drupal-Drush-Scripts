@@ -19,16 +19,16 @@ $site_count = count($data);
 $counter = 1;
 
 // Start looping within the sites
-foreach($data as $d) {
+foreach ($data as $d) {
 
   // Change to the site directory in consideration
   chdir($variables['dir'] . "/" . $d);
 
-    // Print information
-    echo 'Site #: ' . $counter . ' / ' . $site_count . "\n" . 'Processing: ' . $d . "\n";
+  // Print information
+  echo 'Site #: ' . $counter . ' / ' . $site_count . "\n" . 'Processing: ' . $d . "\n";
 
-    // Increase counter
-    $counter++;
+  // Increase counter
+  $counter++;
 
 }
 

@@ -18,16 +18,16 @@ $data = getSites();
 $command = 'drush ev \'$a=variable_get("theme_mytheme_settings", array());$a["toggle_favicon"]=0;variable_set("theme_mytheme_settings", $a);\'';
 
 // Start looping within the sites
-foreach($data as $d) {
+foreach ($data as $d) {
 
   // Change to the site directory in consideration
   chdir($variables['dir'] . "/" . $d);
 
-    // Print current working directory
-    echo getcwd() . "\n";
+  // Print current working directory
+  echo getcwd() . "\n";
 
-    // Execute command
-    system($command);
+  // Execute command
+  system($command);
 
 }
 
