@@ -10,7 +10,14 @@ Example: `./clear_cache_all.php`
 
 ## Prerequisites ##
 
+### Main ###
+
 * [Drush](https://drupal.org/project/drush)
+
+### Others ###
+
+* [CAPTCHA module](https://drupal.org/project/captcha)
+* [reCAPTCHA module](https://drupal.org/project/recaptcha)
 
 ## Downloading Scripts from Github ##
 
