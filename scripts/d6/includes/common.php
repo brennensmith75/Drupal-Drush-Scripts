@@ -1,7 +1,7 @@
 <?php
 
 // Include needed variables
-require 'variables.php';
+require_once 'variables.php';
 
 // Reads Drupal "sites" directory
 function getSites()
