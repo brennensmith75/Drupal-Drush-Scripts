@@ -21,7 +21,7 @@ foreach($data as $d) {
     chdir($variables['dir'] . "/" . $d);
     
     // Assign Drush output to a variable. The output is in JSON format.
-    $result = shell_exec('drush vget theme_birim_genel_settings --format=json');
+    $result = shell_exec('drush vget theme_mytheme_settings --format=json');
     
     // Convert JSON string to a PHP array
     $variables = json_decode($result);
