@@ -20,8 +20,11 @@ $command = 'drush ev \'$a=variable_get("theme_mytheme_settings", array());$a["to
 // Start looping within the sites
 foreach ($data as $d) {
 
+  // Set directory path for easy access
+  $dir_path = $variables['dir'] . '/' . $d;
+
   // Change to the site directory in consideration
-  chdir($variables['dir'] . "/" . $d);
+  chdir($dir_path);
 
   // Print current working directory
   echo getcwd() . "\n";

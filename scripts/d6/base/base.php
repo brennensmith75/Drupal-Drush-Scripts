@@ -21,8 +21,11 @@ $counter = 1;
 // Start looping within the sites
 foreach ($data as $d) {
 
+  // Set directory path for easy access
+  $dir_path = $variables['dir'] . '/' . $d;
+
   // Change to the site directory in consideration
-  chdir($variables['dir'] . "/" . $d);
+  chdir($dir_path);
 
   // Print information
   echo 'Site #: ' . $counter . ' / ' . $site_count . "\n" . 'Processing: ' . $d . "\n";

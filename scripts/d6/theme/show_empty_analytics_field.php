@@ -17,8 +17,11 @@ $data = getSites();
 // Start looping within the sites
 foreach ($data as $d) {
 
+  // Set directory path for easy access
+  $dir_path = $variables['dir'] . '/' . $d;
+
   // Change to the site directory in consideration
-  chdir($variables['dir'] . "/" . $d);
+  chdir($dir_path);
 
   // Assign Drush output to a variable. The output is in JSON format.
   $result = shell_exec('drush vget theme_mytheme_settings --format=json');

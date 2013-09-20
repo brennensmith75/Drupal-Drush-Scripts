@@ -17,15 +17,18 @@ $data = getSites();
 // Start looping within the sites
 foreach ($data as $d) {
 
+  // Set directory path for easy access
+  $dir_path = $variables['dir'] . '/' . $d;
+
   // Change to the site directory in consideration
-  chdir($variables['dir'] . "/" . $d);
+  chdir($dir_path);
 
   // Print current working directory
   echo getcwd() . "\n";
 
   // Prepare settings.php file for writing
   system('chmod u+w settings.php');
-  system('chmod u+w ' . $variables['dir'] . '/' . $d);
+  system('chmod u+w ' . $dir_path);
 
   // We are adding "meta_description" field to settings.php. This field is accessible from Theme Settings
   system('sed "s/\'welcome_text\',/\'welcome_text\',\r\n\'meta_description\',/g" settings.php > settings_tmp.php');
@@ -35,7 +38,7 @@ foreach ($data as $d) {
 
   // Return settings.php to its default permissions
   system('chmod u-w settings.php');
-  system('chmod u-w ' . $variables['dir'] . '/' . $d);
+  system('chmod u-w ' . $dir_path);
 
 }
 
