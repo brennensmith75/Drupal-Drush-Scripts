@@ -1,4 +1,4 @@
-## Drush-PHP CLI Scripts for Drupal MS Installations ##
+# Drush Scripts #
 
 ## Introduction ##
 
