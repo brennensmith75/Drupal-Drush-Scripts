@@ -7,35 +7,25 @@
  *
  */
 
-// Define Drupal sites directory
-$dir = "/home/user/public_html/sites";
+// Include needed files
+require_once '../includes/variables.php';
+require_once '../includes/common.php';
 
-// Read directory
-if($handle = opendir($dir)){
-    while (false !== ($entry = readdir($handle))) {
-        if(is_dir($dir . "/" . $entry) && !is_link($dir . "/" . $entry)) {
-            $entry = trim($entry);
-            $data[] = $entry;
-        }
-    }
-}
-
-// Remove standard directories from the array
-$data_pre = array_diff($data, array(".", "..", "all", "default"));
-$data_post = array_values($data_pre);
+// Get directories
+$data = getSites();
 
 // Start looping within the sites
-foreach($data_post as $d) {
+foreach($data as $d) {
 
-    // Change to the site directory in consideration
-    chdir($dir . "/" . $d);
+  // Change to the site directory in consideration
+  chdir($variables['dir'] . "/" . $d);
 
     // Print current working directory
     echo getcwd() . "\n";
 
     // Prepare settings.php file for writing
     system('chmod u+w settings.php');
-    system('chmod u+w ' . $dir . '/' . $d);
+    system('chmod u+w ' . $variables['dir'] . '/' . $d);
 
     // We are adding "meta_description" field to settings.php. This field is accessible from Theme Settings
     system('sed "s/\'welcome_text\',/\'welcome_text\',\r\n\'meta_description\',/g" settings.php > settings_tmp.php');
@@ -45,7 +35,7 @@ foreach($data_post as $d) {
 
     // Return settings.php to its default permissions
     system('chmod u-w settings.php');
-    system('chmod u-w ' . $dir . '/' . $d);
+    system('chmod u-w ' . $variables['dir'] . '/' . $d);
 
 }
 

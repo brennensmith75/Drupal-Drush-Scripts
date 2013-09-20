@@ -7,28 +7,18 @@
  *
  */
 
-// Define Drupal sites directory
-$dir = "/home/user/public_html/sites";
+// Include needed files
+require_once '../includes/variables.php';
+require_once '../includes/common.php';
 
-// Read directory
-if($handle = opendir($dir)){
-    while (false !== ($entry = readdir($handle))) {
-        if(is_dir($dir . "/" . $entry) && !is_link($dir . "/" . $entry)) {
-            $entry = trim($entry);
-            $data[] = $entry;
-        }
-    }
-}
-
-// Remove standard directories from the array
-$data_pre = array_diff($data, array(".", "..", "all", "default"));
-$data_post = array_values($data_pre);
+// Get directories
+$data = getSites();
 
 // Start looping within the sites
-foreach($data_post as $d) {
+foreach($data as $d) {
 
     // Change to the site directory in consideration
-    chdir($dir . "/" . $d);
+    chdir($variables['dir'] . "/" . $d);
     
     // Assign Drush output to a variable. The output is in JSON format.
     $result = shell_exec('drush vget theme_birim_genel_settings --format=json');
