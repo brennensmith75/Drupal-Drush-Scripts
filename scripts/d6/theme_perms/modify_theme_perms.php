@@ -33,7 +33,7 @@ foreach ($data as $d) {
   echo 'Site #: ' . $counter . ' / ' . $site_count . "\n" . 'Processing: ' . $d . "\n";
 
   // Run the Drush module using settings in drushrc.php
-  system('drush -y environment metucc');
+  system('drush -y environment orbingol');
 
   // Clear all caches
   system('drush cc all');
