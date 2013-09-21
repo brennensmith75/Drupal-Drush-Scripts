@@ -13,11 +13,14 @@ Example: `./clear_cache_all.php`
 ### Main ###
 
 * [Drush](https://drupal.org/project/drush)
+* [Drush Environment](https://drupal.org/sandbox/bleen18/1696714) and information about this module on [author's website](http://bleen.net/blog/maintaining-different-settings-different-environments-drush)
 
 ### Others ###
 
 * [CAPTCHA module](https://drupal.org/project/captcha)
 * [reCAPTCHA module](https://drupal.org/project/recaptcha)
+* [Permissions API](https://drupal.org/project/permissions_api) _(for D6 only)_
+* [Link Checker](https://drupal.org/project/linkchecker)
 
 ## Downloading Scripts from Github ##
 
