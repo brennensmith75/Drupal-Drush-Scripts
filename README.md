@@ -21,6 +21,7 @@ Example: `./clear_cache_all.php`
 * [reCAPTCHA module](https://drupal.org/project/recaptcha)
 * [Permissions API](https://drupal.org/project/permissions_api) _(for D6 only)_
 * [Link Checker](https://drupal.org/project/linkchecker)
+* [Internalization](https://drupal.org/project/i18n)
 
 ## Downloading Scripts from Github ##
 
