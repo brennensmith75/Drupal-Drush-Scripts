@@ -7,6 +7,8 @@
  * http://drupal.org/sandbox/ericduran/1154642.
  *
  * Small problems are fixed by orbingol
+ * Note 1: I didn't write the complete code, but I just modified it for my purposes.
+ * Note 2: Module web site: https://drupal.org/sandbox/bleen18/1696714
  *
  */
 
