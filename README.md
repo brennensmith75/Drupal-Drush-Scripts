@@ -28,11 +28,11 @@ Example: `./clear_cache_all.php`
 ### Windows (for development) ###
 
 * It is possible to use [Github for Windows](http://windows.github.com).
-* Altenatively, [Atlassian SourceTree](http://www.sourcetreeapp.com) is a good alternative.
-  * Requires free registration.
-  * If you have a *Bitbucket* account, you can use it for free registration.
+* Additionally, [Atlassian SourceTree](http://www.sourcetreeapp.com) is a good alternative.
+  * It requires a registration, but registration is free.
+  * If you have a *Bitbucket* account, you can use it for this step.
+* You can commit, push and pull changes to [Github repo](https://github.com/orbingol/drush) using these tools.
 * For editing files, I recommend [Notepad++](http://notepad-plus-plus.org).
-* You can stage, commit and push changes to [Github repo](https://github.com/orbingol/drush) using these tools.
 
 ### Debian (for development) ###
 
