@@ -22,6 +22,7 @@ Example: `./clear_cache_all.php`
 * [Permissions API](https://drupal.org/project/permissions_api) _(for D6 only)_
 * [Link Checker](https://drupal.org/project/linkchecker)
 * [Internalization](https://drupal.org/project/i18n)
+* [Secure Pages](https://drupal.org/project/securepages) _(for D6 only)_
 
 ## Downloading Scripts from Github ##
 
