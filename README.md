@@ -23,14 +23,14 @@ Example: `./clear_cache_all.php`
 
 ### For All Platforms ##
 
-* You can use *Download as zip* button on the right side.
+* You can use *Download ZIP* button on the right side.
 
 ### Windows (for development) ###
 
-* It is possible to use [Github for Windows](http://windows.github.com)
+* It is possible to use [Github for Windows](http://windows.github.com).
 * Altenatively, [Atlassian SourceTree](http://www.sourcetreeapp.com) is a good alternative.
   * Requires free registration.
-  * If you have *Bitbucket* account, you can use it for free registration.
+  * If you have a *Bitbucket* account, you can use it for free registration.
 * For editing files, I recommend [Notepad++](http://notepad-plus-plus.org).
 * You can stage, commit and push changes to [Github repo](https://github.com/orbingol/drush) using these tools.
 
