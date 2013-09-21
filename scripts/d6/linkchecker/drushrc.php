@@ -3,7 +3,7 @@
 /**
  *
  * User scope Drush configuration file
- * Note: Put this file under ".drush" directory
+ * Note: Put this file under ".drush" or "sites/all/drush" directory
  *
  *
  * Copyright 2012-2013 Onur Rauf Bingol
@@ -22,7 +22,7 @@
  *
  */
 
-// Settings for Environments Drush Module
+// Settings for Drush Environment module
 $options['environments'] = array(
   // #key = The enviroment name.
   'orbingol' => array(
