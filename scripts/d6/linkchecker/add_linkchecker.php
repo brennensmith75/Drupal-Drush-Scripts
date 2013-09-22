@@ -4,6 +4,8 @@
 /**
  *
  * Enable "Link Checker" module, set some of its options and add its link to specified menu
+ * Note: You need to put "environment.drush.inc" file under ".drush" directory before running this script.
+ * You can find this file under "scripts/d6/modules/environment"
  *
  *
  * Copyright 2012-2013 Onur Rauf Bingol
