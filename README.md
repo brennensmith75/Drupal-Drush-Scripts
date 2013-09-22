@@ -46,3 +46,7 @@ Example: `./clear_cache_all.php`
 * Go to your development directory (or create one) and run `git clone https://github.com/orbingol/drush.git`
 * Use your favorite editor to edit files. [Geany](http://www.geany.org) is very similar to Notepad++ on Windows.
 * Read [Git documentation](http://git-scm.com/documentation) for details.
+
+## License ##
+
+This package is licensed under [APACHE License v2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
