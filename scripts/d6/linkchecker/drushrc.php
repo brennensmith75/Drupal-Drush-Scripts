@@ -73,7 +73,7 @@ example.org",
     ),
     // grant or revoke
     'permissions' => array(
-      'site admin' => array (
+      'site administrator' => array (
         'grant' => array (
           'access broken links report',
           'access own broken links report',
