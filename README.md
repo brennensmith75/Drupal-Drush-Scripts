@@ -14,6 +14,8 @@ Example: `./clear_cache_all.php`
 
 * [Drush](https://drupal.org/project/drush)
 * [Drush Environment](https://drupal.org/sandbox/bleen18/1696714) and information about this module on [author's website](http://bleen.net/blog/maintaining-different-settings-different-environments-drush)
+* [Drush Views](https://drupal.org/project/drush_views)
+* [Drush Extras](https://drupal.org/project/drush_extras) _(for D6 only)_
 
 ### Others ###
 
@@ -24,6 +26,7 @@ Example: `./clear_cache_all.php`
 * [Internalization](https://drupal.org/project/i18n)
 * [Secure Pages](https://drupal.org/project/securepages) _(for D6 only)_
 * [System Permissions](https://drupal.org/project/system_perm) _(for D6 only)_
+* [Calendar](https://drupal.org/project/calendar)
 
 ## Downloading Scripts from Github ##
 
