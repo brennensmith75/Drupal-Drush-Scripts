@@ -1,0 +1,5 @@
+bio.metu.edu.tr
+math.metu.edu.tr
+hist.metu.edu.tr
+chem.metu.edu.tr
+psy.metu.edu.tr

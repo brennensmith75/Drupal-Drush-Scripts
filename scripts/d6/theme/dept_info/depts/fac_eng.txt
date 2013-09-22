@@ -1,0 +1,5 @@
+che.metu.edu.tr
+fde.metu.edu.tr
+mine.metu.edu.tr
+mete.metu.edu.tr
+es.metu.edu.tr

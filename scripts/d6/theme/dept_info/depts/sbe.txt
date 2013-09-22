@@ -1,0 +1,8 @@
+asn.metu.edu.tr
+ars.metu.edu.tr
+gws.metu.edu.tr
+mcs.metu.edu.tr
+sa.metu.edu.tr
+lna.metu.edu.tr
+spl.metu.edu.tr
+gtss.metu.edu.tr
