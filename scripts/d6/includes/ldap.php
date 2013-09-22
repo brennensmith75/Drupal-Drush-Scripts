@@ -2,7 +2,7 @@
 
 /**
  *
- * Configuration File for Drush Scripts
+ * LDAP functions for use in Drush scripts
  *
  *
  * Copyright 2012-2013 Onur Rauf Bingol
@@ -21,12 +21,29 @@
  *
  */
 
-// Define Drupal sites directory
-$variables['dir'] = "/home/user/public_html/sites";
+// Include needed variables
+require_once 'variables.php';
 
-// Set directory exclusion array
-$variables['excluded_dirs'] = array(".", "..", "all", "default");
+function ldap_check($username) {
 
-// Set LDAP options
-$variables['ldap_server'] = 'auth.example.com';
-$variables['ldap_dn'] = 'ou=people, dc=directory, dc=example, dc=com';
+  global $variables;
+
+  $ds = ldap_connect($variables['ldap_server']);
+  @$r = ldap_bind($ds);
+  $dn = $variables['ldap_dn'];
+  $filter = '(&(uid=' . $username . '))';
+  @$sr = ldap_search($ds, $dn, $filter);
+  @$info = ldap_get_entries($ds, $sr);
+
+  if (ldap_count_entries($ds, $sr) == 0) {
+
+    $check_result = 0;
+
+  } else {
+
+    $check_result = 1;
+  }
+
+  return $check_result;
+
+}
