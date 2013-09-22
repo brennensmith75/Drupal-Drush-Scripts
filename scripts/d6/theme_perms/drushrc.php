@@ -26,7 +26,7 @@
 $options['environments'] = array(
   'orbingol' => array(
     'permissions' => array(
-      'site admin' => array(
+      'site administrator' => array(
         'grant' => array(
           'administer themes',
         ),
