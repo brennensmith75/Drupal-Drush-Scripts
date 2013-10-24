@@ -22,6 +22,9 @@
  *
  */
 
+// Change to working directory
+chdir(dirname(__FILE__));
+
 // Include needed files
 require_once '../includes/variables.php';
 require_once '../includes/common.php';
